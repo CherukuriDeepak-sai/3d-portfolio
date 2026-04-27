@@ -33,6 +33,8 @@ type TConfig = {
   sections: {
     about: Required<TSection>;
     experience: TSection;
+    education: TSection;
+    certifications: Required<TSection>;
     feedbacks: TSection;
     works: Required<TSection>;
   };
@@ -40,16 +42,19 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Deepaksai Cherukuri — 3D Portfolio",
+    fullName: "Deepaksai Cherukuri",
+    email: "deepaksaicherukuri@mail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Deepaksai Cherukuri",
+    p: [
+      "AI/ML enthusiast based in the",
+      "London Area, United Kingdom",
+    ],
   },
   contact: {
-    p: "Get in touch",
+    p: "Let us connect",
     h2: "Contact.",
     form: {
       name: {
@@ -66,29 +71,46 @@ export const config: TConfig = {
   sections: {
     about: {
       p: "Introduction",
-      h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      h2: "About Me.",
+      content: `I have always been curious about how technology can turn ideas
+      into practical real-world solutions. During my studies in Computer Science
+      at the University of East London, I moved beyond theory and started building
+      projects in AI and machine learning that solve real problems. I enjoy
+      converting raw and unstructured data into clear insights, building models
+      that improve prediction accuracy, and developing simple web tools that make
+      those insights usable.
+
+      My core strengths include machine learning with Python, data analysis,
+      predictive modelling, algorithms, and object-oriented programming. I am
+      currently focused on AI/ML Engineer and Data Analyst opportunities in the
+      UK where I can build reliable systems that help people make better, faster
+      decisions.`,
     },
     experience: {
-      p: "What I have done so far",
+      p: "My professional journey",
       h2: "Work Experience.",
     },
+    education: {
+      p: "Academic background",
+      h2: "Education.",
+    },
+    certifications: {
+      p: "Professional learning",
+      h2: "Courses & Certifications.",
+      content: `A quick snapshot of focused programs that strengthened my
+    practical software engineering and AI/ML development skills.`,
+    },
     feedbacks: {
-      p: "What others say",
+      p: "Recommendations",
       h2: "Testimonials.",
     },
     works: {
-      p: "My work",
+      p: "Selected work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `These projects represent my work across frontend engineering,
+    3D interaction, and full-stack implementation. Each one highlights
+    practical problem-solving, clean architecture, and attention to user
+    experience from concept to deployment.`,
     },
   },
 };

@@ -2,6 +2,7 @@ import type {
   TNavLink,
   TService,
   TTechnology,
+  TCertificate,
   TExperience,
   TTestimonial,
   TProject,
@@ -13,25 +14,24 @@ import {
   creator,
   web,
   javascript,
-  typescript,
+  java,
+  python,
   html,
   css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  meta,
+  framer,
+  mysql,
+  tensorflow,
+  scikitlearn,
+  pandas,
+  numpy,
   starbucks,
   tesla,
   shopify,
   carrent,
   jobit,
   tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -51,30 +51,42 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "AI/ML Enthusiast",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Python Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Full Stack Java Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Web App Developer",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
   {
-    name: "HTML 5",
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Git",
+    icon: git,
+  },
+  {
+    name: "HTML",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS",
     icon: css,
   },
   {
@@ -82,145 +94,149 @@ const technologies: TTechnology[] = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "MySQL",
+    icon: mysql,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Framer",
+    icon: framer,
+  },
+  {
+    name: "TensorFlow",
+    icon: tensorflow,
+  },
+  {
+    name: "Scikit-learn",
+    icon: scikitlearn,
+  },
+  {
+    name: "Pandas",
+    icon: pandas,
+  },
+  {
+    name: "NumPy",
+    icon: numpy,
   },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
+    title: "Python Developer",
+    companyName: "Maang Technologies Private Limited",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "December 2024 - October 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and optimized Python applications and automation scripts, reducing manual processing time by 30-40%.",
+      "Developed and tested backend features using Python and Java, improving performance and reliability.",
+      "Analysed structured datasets and implemented ML algorithms to improve prediction accuracy.",
+      "Collaborated with remote teams using Git/GitHub for faster feature delivery and cleaner version control.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
+    title: "Python Developer",
+    companyName: "Atrisol Technologies",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "January 2024 - May 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed Python scripts for data processing and automation, improving workflow efficiency by 25%.",
+      "Assisted in building machine learning models for data classification and analysis.",
+      "Cleaned and analysed datasets using Pandas and NumPy for more accurate reporting.",
+      "Contributed to web development tasks and improved runtime stability through testing and debugging.",
     ],
   },
+];
+
+const education: TExperience[] = [
   {
-    title: "Web Developer",
-    companyName: "Shopify",
+    title: "Master's Degree, Computer Science",
+    companyName: "University of East London",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Expected 2028",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Specializing in AI and machine learning with a practical, project-driven approach.",
+      "Focused on data-driven systems, predictive modelling, and applied algorithm design.",
+      "Built strong foundations in object-oriented programming and software engineering.",
+      "Continually developing practical AI/ML solutions for real-world use cases.",
     ],
   },
   {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
+    title: "Bachelor of Computer Applications (BCA)",
+    companyName: "R.K Degree College",
+    icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "2021 - 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed core coursework in programming, data structures, databases, and software engineering.",
+      "Built foundational skills in problem-solving, object-oriented programming, and application development.",
+      "Worked on practical academic projects using web and programming technologies.",
+      "Graduated with a strong base for advanced AI/ML and analytics-focused study.",
     ],
+  },
+];
+
+const certifications: TCertificate[] = [
+  {
+    title: "Java Full Stack Developer",
+    provider: "JSpiders",
+    credentialType: "Professional Training",
+  },
+  {
+    title: "Python 100 Days Bootcamp",
+    provider: "Udemy",
+    credentialType: "Online Bootcamp",
   },
 ];
 
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Deepaksai consistently turned complex data questions into practical solutions and delivered outcomes with clarity.",
+    name: "Team Lead",
+    designation: "Engineering",
+    company: "Maang Technologies",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      "His focus on clean implementation and model accuracy made a visible impact on project quality and delivery speed.",
+    name: "Project Mentor",
+    designation: "Data and AI",
+    company: "Atrisol Technologies",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Deepaksai brings curiosity, discipline, and strong technical grounding to every task, especially in AI/ML workflows.",
+    name: "Academic Reviewer",
+    designation: "Computer Science",
+    company: "University of East London",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "Predictive Demand Analyzer",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Built an end-to-end machine learning pipeline to analyse historical business data, identify patterns, and improve forecasting accuracy for operational planning.",
     tags: [
       {
-        name: "react",
+        name: "python",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "scikit-learn",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "pandas",
         color: "pink-text-gradient",
       },
     ],
@@ -228,20 +244,20 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Smart Dataset Insights",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Designed and implemented data cleaning, transformation, and exploratory analysis workflows that generated actionable insights from noisy datasets.",
     tags: [
       {
-        name: "react",
+        name: "numpy",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "data-analysis",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "visualization",
         color: "pink-text-gradient",
       },
     ],
@@ -249,20 +265,20 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "AI Web Utility Dashboard",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Created a lightweight web-based dashboard that connects model outputs with simple UI components so non-technical users can interpret predictions quickly.",
     tags: [
       {
-        name: "nextjs",
+        name: "flask",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "machine-learning",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "web-app",
         color: "pink-text-gradient",
       },
     ],
@@ -271,4 +287,12 @@ const projects: TProject[] = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  education,
+  certifications,
+  testimonials,
+  projects,
+};

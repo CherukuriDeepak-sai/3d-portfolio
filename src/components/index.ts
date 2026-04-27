@@ -10,6 +10,8 @@ import Navbar from "./layout/Navbar";
 import About from "./sections/About";
 import Tech from "./sections/Tech";
 import Experience from "./sections/Experience";
+import Education from "./sections/Education";
+import Certifications from "./sections/Certifications";
 import Works from "./sections/Works";
 import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
@@ -21,6 +23,8 @@ export {
   About,
   Tech,
   Experience,
+  Education,
+  Certifications,
   Works,
   Feedbacks,
   Contact,

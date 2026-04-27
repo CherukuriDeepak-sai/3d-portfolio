@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../../constants/styles";
 import { navLinks } from "../../constants";
 import { logo, menu, close } from "../../assets";
-import { config } from "../../constants/config";
 
 const Navbar = () => {
   const [active, setActive] = useState<string | null>();
@@ -59,15 +58,16 @@ const Navbar = () => {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center"
           onClick={() => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="h-9 w-9 object-contain" />
-          <p className="flex cursor-pointer text-[18px] font-bold text-white ">
-            {config.html.title}
-          </p>
+          <img
+            src={logo}
+            alt="Deepak logo"
+            className="nav-wordmark h-14 w-auto max-w-[110px] object-contain sm:h-16 sm:max-w-[128px]"
+          />
         </Link>
 
         <ul className="hidden list-none flex-row gap-10 sm:flex">

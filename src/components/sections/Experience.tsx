@@ -12,7 +12,14 @@ import { Header } from "../atoms/Header";
 import { TExperience } from "../../types";
 import { config } from "../../constants/config";
 
+const isActiveTimeline = (date: string) =>
+  /present|current|expected/i.test(date);
+
 const ExperienceCard: React.FC<TExperience> = (experience) => {
+  const dotClass = isActiveTimeline(experience.date)
+    ? "timeline-blink-dot timeline-blink-dot--active"
+    : "timeline-blink-dot timeline-blink-dot--past";
+
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -21,13 +28,15 @@ const ExperienceCard: React.FC<TExperience> = (experience) => {
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
       date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      iconStyle={{
+        background: "transparent",
+        boxShadow: "none",
+      }}
       icon={
         <div className="flex h-full w-full items-center justify-center">
-          <img
-            src={experience.icon}
-            alt={experience.companyName}
-            className="h-[60%] w-[60%] object-contain"
+          <span
+            className={dotClass}
+            aria-label="timeline marker"
           />
         </div>
       }
