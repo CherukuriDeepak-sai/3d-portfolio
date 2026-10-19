@@ -20,7 +20,10 @@ try {
       recursive: true,
       filter(item) {
         const relative = path.relative(path.join(root, 'app'), item).replaceAll('\\', '/')
-        if (entry.name === 'app' && ['api', 'edit', 'stats'].some((name) => relative === name || relative.startsWith(`${name}/`))) return false
+        if (entry.name === 'app' && (
+          ['api', 'edit', 'stats'].some((name) => relative === name || relative.startsWith(`${name}/`)) ||
+          relative === 'opengraph-image.tsx' || relative.endsWith('/opengraph-image.tsx')
+        )) return false
         return true
       },
     })
