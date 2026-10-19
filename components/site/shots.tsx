@@ -3,6 +3,7 @@
 import { useCallback, useRef, useState } from 'react'
 
 import { prefersReducedMotion } from '@/lib/site-motion'
+import { publicPath } from '@/lib/public-path'
 
 /**
  * Project screenshots on a document page.
@@ -47,7 +48,7 @@ export function Shots({ images, alt }: { images: readonly string[]; alt: string 
           <div className="shots__slide" key={src}>
             {/* eslint-disable-next-line @next/next/no-img-element -- static asset, fitted into a fixed frame */}
             <img
-              src={src}
+              src={publicPath(src)}
               alt={many ? `${alt} — ${i + 1} of ${images.length}` : alt}
               loading={i === 0 ? 'eager' : 'lazy'}
               decoding="async"

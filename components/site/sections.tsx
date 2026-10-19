@@ -12,6 +12,7 @@ import {
   site,
   toolGroups,
 } from '@/content'
+import { publicPath } from '@/lib/public-path'
 import { JobCard } from '@/components/site/job-card'
 import { NavDrawer } from '@/components/site/nav-drawer'
 import { Portrait } from '@/components/site/portrait'
@@ -46,7 +47,7 @@ export function Bar() {
         </nav>
         <ThemeToggle />
         {profile.resumePdf ? (
-          <a className="bar__cta" href={profile.resumePdf} download>
+          <a className="bar__cta" href={publicPath(profile.resumePdf)} download>
             <span>{site.resume.short}</span>
             <span className="long">{site.resume.long}</span>
           </a>
@@ -198,7 +199,7 @@ export function Skills() {
                       A tool with no logo gets its name alone — no stand-in.
                     */}
                     {/* eslint-disable-next-line @next/next/no-img-element -- tiny fixed-size logo */}
-                    {tool.logo ? <img src={tool.logo} alt="" width={30} height={30} /> : null}
+                    {tool.logo ? <img src={publicPath(tool.logo)} alt="" width={30} height={30} /> : null}
                     {!tool.logo ? <ToolMark name={tool.name} group={group.label} /> : null}
                     {tool.name}
                   </span>
@@ -321,7 +322,7 @@ export function Work() {
               >
                 {p.images?.length ? (
                   /* eslint-disable-next-line @next/next/no-img-element -- static asset, letterboxed into a fixed 16:10 frame */
-                  <img src={p.images[0]} alt="" loading="lazy" />
+                  <img src={publicPath(p.images[0])} alt="" loading="lazy" />
                 ) : (
                   <span>{p.name}</span>
                 )}
@@ -392,11 +393,11 @@ export function Credentials() {
                 return (
                   <li className={`cert-badge${image ? ' cert-badge--has-image' : ''}`} key={item}>
                     {image ? (
-                      <a href={image} target="_blank" rel="noopener noreferrer" aria-label={`${item} certificate image (opens in a new tab)`}>
+                      <a href={publicPath(image)} target="_blank" rel="noopener noreferrer" aria-label={`${item} certificate image (opens in a new tab)`}>
                         {item}
                         <span className="cert-preview" aria-hidden="true">
                           {/* eslint-disable-next-line @next/next/no-img-element -- small optimized WebP certificate scan */}
-                          <img src={image} alt="" loading="lazy" />
+                          <img src={publicPath(image)} alt="" loading="lazy" />
                         </span>
                       </a>
                     ) : item}
@@ -441,7 +442,7 @@ export function Closer() {
               </a>
             ))}
           {profile.resumePdf ? (
-            <a href={profile.resumePdf} download>
+            <a href={publicPath(profile.resumePdf)} download>
               {site.resume.short} <span aria-hidden>↓</span>
             </a>
           ) : null}

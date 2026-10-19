@@ -3,6 +3,7 @@
 import { useId, useRef, useState } from 'react'
 
 import { profile, site } from '@/content'
+import { publicPath } from '@/lib/public-path'
 
 /**
  * The About portrait, and the secret behind it.
@@ -90,7 +91,7 @@ export function Portrait() {
         {/* pointer-only by design: a decorative photo should not be in the tab order */}
         <div className="portrait__face portrait__face--front" onClick={onTap}>
           {/* eslint-disable-next-line @next/next/no-img-element -- static asset, fixed 4:5 frame */}
-          <img src={profile.portrait} alt={site.about.portraitAlt} />
+          <img src={publicPath(profile.portrait)} alt={site.about.portraitAlt} />
         </div>
 
         {profile.portraitHidden ? (
@@ -102,7 +103,7 @@ export function Portrait() {
             */}
             {asking || flipped ? (
               // eslint-disable-next-line @next/next/no-img-element -- static asset, fixed 4:5 frame
-              <img src={profile.portraitHidden} alt={egg.hiddenAlt} />
+              <img src={publicPath(profile.portraitHidden)} alt={egg.hiddenAlt} />
             ) : null}
             <p className="portrait__caption">{egg.caption}</p>
           </div>

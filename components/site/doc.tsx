@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import { Cursor } from '@/components/desktop/cursor'
 import { profile, site } from '@/content'
+import { publicPath } from '@/lib/public-path'
 
 import { ThemeToggle } from './theme-toggle'
 
@@ -41,7 +42,7 @@ export function DocBar({ back }: { back: { href: string; label: string } }) {
       <ThemeToggle />
 
       {profile.resumePdf ? (
-        <a className="bar__cta" href={profile.resumePdf} download>
+        <a className="bar__cta" href={publicPath(profile.resumePdf)} download>
           <span>{site.resume.short}</span>
           <span className="long">{site.resume.long}</span>
         </a>

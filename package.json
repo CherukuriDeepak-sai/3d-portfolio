@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "pages:export": "node scripts/export-pages.mjs",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
