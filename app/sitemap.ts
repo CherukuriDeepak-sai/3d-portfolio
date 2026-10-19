@@ -3,6 +3,8 @@ import type { MetadataRoute } from 'next'
 import { projects } from '@/content'
 import { SITE_URL } from '@/lib/site'
 
+export const dynamic = 'force-static'
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     // `/` is now the scrolling front page — the primary surface for readers and crawlers alike
