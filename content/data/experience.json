@@ -1,0 +1,76 @@
+{
+  "jobs": [
+    {
+      "slug": "sainsburys-trading-assistant",
+      "role": "Trading Assistant",
+      "company": "Sainsbury’s",
+      "period": "May 2026 – present",
+      "year": 2026,
+      "meta": "Sainsbury’s · London, England · May 2026 – present",
+      "lede": "Supporting customers and store operations as a Trading Assistant.",
+      "highlights": [
+        "Provide customer service and communicate clearly with customers and colleagues.",
+        "Work as part of a team, manage time, and solve day-to-day problems.",
+        "Handle stock and support merchandising."
+      ],
+      "stack": ["Customer service", "Teamwork", "Time management", "Problem-solving", "Stock handling", "Merchandising"]
+    },
+    {
+      "slug": "maang-python-developer",
+      "role": "Python Developer",
+      "company": "Maang Technologies Private Limited",
+      "period": "December 2024 – October 2025",
+      "year": 2025,
+      "meta": "Maang Technologies Private Limited · Hyderabad, Telangana, India · Dec 2024 – Oct 2025",
+      "lede": "Built Python applications, automation scripts, backend features, and web-based tools.",
+      "highlights": [
+        "Built and optimized Python applications and automation scripts, reducing manual processing time by a reported 30–40%.",
+        "Developed and tested backend features in Python and Java, improving application performance and reliability.",
+        "Analysed structured datasets and implemented machine-learning algorithms to generate insights and improve prediction accuracy.",
+        "Collaborated with remote teams using Git and GitHub; debugged issues, reducing system errors by a reported 20%+.",
+        "Supported web-based tools using Python, HTML, CSS, and basic JavaScript."
+      ],
+      "stack": ["Python", "Java", "NumPy", "Pandas", "Scikit-learn", "Git", "GitHub", "HTML", "CSS", "JavaScript"]
+    },
+    {
+      "slug": "atrisol-python-developer",
+      "role": "Python Developer",
+      "company": "Atrisol Technologies",
+      "period": "January 2024 – May 2024",
+      "year": 2024,
+      "meta": "Atrisol Technologies · Bengaluru, India · Jan 2024 – May 2024",
+      "lede": "Worked on Python data-processing and automation scripts, machine-learning models, and web development tasks.",
+      "highlights": [
+        "Developed Python scripts for data processing and automation, improving workflow efficiency by a reported 25%.",
+        "Assisted with small-scale machine-learning models for data classification and analysis.",
+        "Cleaned and analysed datasets using Pandas and NumPy to support reporting and insights.",
+        "Contributed to web-development tasks and tested and debugged code to improve stability.",
+        "Worked in a hybrid team and delivered tasks on time."
+      ],
+      "stack": ["Python", "Pandas", "NumPy", "Git", "HTML", "CSS", "JavaScript"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of East London",
+      "degree": "Master’s Degree, Computer Science",
+      "detail": "2026 · In progress · London, United Kingdom"
+    },
+    {
+      "institution": "S.V. University",
+      "degree": "Bachelor of Computer Applications",
+      "detail": "Completed"
+    }
+  ],
+  "certifications": [
+    "Deep Learning Onramp",
+    "Gemini for Application Developers",
+    "Identify key hardware & IT infrastructure components of datacenters",
+    "Learn about datacenter design, architecture & infrastructure management",
+    "MATLAB Onramp",
+    "Explore Convolutional Neural Networks",
+    "Computer Vision Onramp",
+    "Object Detection with Deep Learning"
+  ],
+  "awards": []
+}

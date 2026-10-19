@@ -1,0 +1,31 @@
+{
+  "profile": {
+    "name": "Deepak Sai Cherukuri",
+    "initials": "DS",
+    "portrait": "/pfp/deepak-sai-cherukuri.png",
+    "resumePdf": "/deepak-sai-cherukuri-resume.pdf",
+    "role": {
+      "prefix": "Computer Science master's student",
+      "emphasis": "learning AI & machine learning"
+    },
+    "location": "London, United Kingdom",
+    "availability": "Seeking AI/ML Engineer or Data Analyst roles in the UK",
+    "email": "cherukurideepaksai32@gmail.com",
+    "intro": "I’m a Computer Science master’s student at the University of East London, learning AI and machine learning with the goal of becoming an AI/ML engineer. My projects include natural image machine vision and an AWS warehouse architecture.",
+    "notes": [
+      "I have worked as a Python Developer at Maang Technologies and Atrisol Technologies, building applications, automation scripts, and small-scale machine-learning models.",
+      "I’m also a Trading Assistant at Sainsbury’s, where my work includes customer service, teamwork, problem-solving, stock handling, and merchandising."
+    ],
+    "links": [
+      {
+        "label": "Email",
+        "href": "mailto:cherukurideepaksai32@gmail.com"
+      }
+    ]
+  },
+  "headlineStats": [
+    { "value": "97%", "label": "Natural image project accuracy" },
+    { "value": "3", "label": "Experience roles" },
+    { "value": "2", "label": "Selected projects" }
+  ]
+}

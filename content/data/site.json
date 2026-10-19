@@ -1,0 +1,82 @@
+{
+  "openTo": "Open to AI/ML Engineer and Data Analyst opportunities in the UK",
+  "headline": {
+    "lead": "Computer Science student exploring",
+    "emphasis": "AI and machine learning",
+    "tail": "through practical projects."
+  },
+  "seeWork": "Explore selected work",
+  "toAbout": "About me",
+  "toAboutBadge": "Background & skills",
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "work": "Work",
+    "contact": "Contact",
+    "sectionsLabel": "Sections",
+    "topLabel": "Top of page",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "backToTop": "Back to top"
+  },
+  "resume": { "short": "Résumé", "long": " PDF ↓" },
+  "theme": { "toDark": "Switch to dark", "toLight": "Switch to light" },
+  "about": {
+    "eyebrow": "About",
+    "title": "A little about me",
+    "portraitPending": "Portrait coming soon",
+    "portraitAlt": "Portrait of Deepak Sai Cherukuri"
+  },
+  "portraitEgg": {
+    "taps": 10,
+    "question": "What are you studying?",
+    "inputLabel": "Your answer",
+    "submit": "Answer",
+    "wrong": "Not quite. Try again.",
+    "dismiss": "Close",
+    "answers": ["computer science", "computer science masters", "msc computer science"],
+    "caption": "Deepak Sai Cherukuri",
+    "hiddenAlt": "Deepak Sai Cherukuri",
+    "flipBack": "Flip back"
+  },
+  "skills": { "eyebrow": "Skills", "title": "Tools and strengths" },
+  "experience": {
+    "eyebrow": "Experience",
+    "title": "Work and education",
+    "indexLabel": "Roles",
+    "expand": "Show details",
+    "collapse": "Hide details"
+  },
+  "work": {
+    "eyebrow": "Selected work",
+    "title": "Projects in AI and cloud computing",
+    "lede": "A natural image machine-vision project and an AWS warehouse architecture project.",
+    "readMore": "Project details",
+    "shotPending": "No project image provided"
+  },
+  "credentials": {
+    "eyebrow": "Education and certifications",
+    "title": "Learning and credentials",
+    "education": "Education",
+    "certifications": "Certifications",
+    "awards": "Awards"
+  },
+  "closer": {
+    "eyebrow": "Contact",
+    "title": "Get in touch",
+    "body": "I’m currently studying Computer Science at the University of East London and building my AI/ML experience. Email is the best way to reach me.",
+    "plainVersion": "Plain text version"
+  },
+  "footer": { "note": "Thanks for visiting." },
+  "workPage": {
+    "allWork": "All projects",
+    "home": "Home",
+    "indexTitle": "Selected work",
+    "indexLede": "Projects in machine vision and cloud computing.",
+    "whatItDoes": "Project details",
+    "builtWith": "Tools and methods",
+    "shots": "Project images",
+    "backToWork": "Back to all projects"
+  }
+}

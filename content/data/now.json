@@ -1,0 +1,10 @@
+{
+  "updated": "2026-10",
+  "lede": "What I’m focused on right now.",
+  "items": [
+    { "label": "Studying", "what": "Master’s in Computer Science at the University of East London." },
+    { "label": "Learning", "what": "AI and machine learning, with the goal of pursuing an AI/ML engineer career." },
+    { "label": "Building", "what": "Machine-vision work with natural images and an AWS warehouse architecture." }
+  ],
+  "foot": ""
+}

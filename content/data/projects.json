@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "natural-image-machine-vision",
+    "name": "Natural Image Machine Vision",
+    "tagline": "AI-based analysis of natural images",
+    "kind": "System",
+    "meta": "Artificial intelligence · Machine vision",
+    "lede": "A machine-vision project analysing natural images with artificial intelligence, achieving a reported accuracy of 97%.",
+    "highlights": [
+      "Applied artificial intelligence and machine vision to a natural-images project.",
+      "Reported model accuracy: **97%**."
+    ],
+    "stack": ["Machine vision"]
+  },
+  {
+    "slug": "aws-warehouse-architecture",
+    "name": "AWS Warehouse Architecture",
+    "tagline": "Cloud architecture for a warehouse project",
+    "kind": "System",
+    "meta": "Cloud computing · AWS",
+    "lede": "A cloud-computing project to build a warehouse architecture using AWS.",
+    "highlights": [
+      "Designed a warehouse architecture using AWS for a cloud-computing project."
+    ],
+    "stack": ["AWS", "Cloud computing"]
+  }
+]

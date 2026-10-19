@@ -1,0 +1,48 @@
+[
+  {
+    "label": "Programming",
+    "tools": [
+      { "name": "Python", "logo": "/logos/python-original.svg" },
+      { "name": "Java", "logo": "/logos/java-original.svg" },
+      { "name": "JavaScript", "logo": "/logos/javascript-original.svg" },
+      { "name": "HTML", "logo": "/logos/html5-original.svg" },
+      { "name": "CSS", "logo": "/logos/css3-original.svg" },
+      { "name": "Algorithms" },
+      { "name": "Object-oriented programming" }
+    ]
+  },
+  {
+    "label": "Data & machine learning",
+    "tools": [
+      { "name": "NumPy" },
+      { "name": "Pandas" },
+      { "name": "Scikit-learn" },
+      { "name": "Predictive modelling" },
+      { "name": "Machine vision" },
+      { "name": "Data analysis" }
+    ]
+  },
+  {
+    "label": "Cloud & development",
+    "tools": [
+      { "name": "AWS", "logo": "/logos/amazonwebservices-original-wordmark.svg" },
+      { "name": "Cloud computing" },
+      { "name": "Git", "logo": "/logos/git-original.svg" },
+      { "name": "GitHub", "logo": "/logos/github-original.svg" },
+      { "name": "Web applications" }
+    ]
+  },
+  {
+    "label": "Professional skills",
+    "tools": [
+      { "name": "Customer service" },
+      { "name": "Teamwork" },
+      { "name": "Communication" },
+      { "name": "Time management" },
+      { "name": "Problem-solving" },
+      { "name": "Stock handling" },
+      { "name": "Merchandising" },
+      { "name": "Climate change adaptation" }
+    ]
+  }
+]
