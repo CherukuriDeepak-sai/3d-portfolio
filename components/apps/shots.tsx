@@ -16,18 +16,20 @@ import { Carousel, type Slide } from './carousel'
 export function Shots({
   images,
   alt,
+  descriptions,
   full,
 }: {
   images?: readonly string[]
   alt: string
+  descriptions?: readonly string[]
   full?: boolean
 }) {
   const list = images ?? []
   if (list.length === 0) return null
 
-  const slides: Slide[] = list.map((src) => {
+  const slides: Slide[] = list.map((src, index) => {
     const size = imageSize(src)
-    return { src, width: size?.width, height: size?.height }
+    return { src, alt: descriptions?.[index], width: size?.width, height: size?.height }
   })
 
   // the frame takes the FIRST slide's shape; the author controls order, and every other slide

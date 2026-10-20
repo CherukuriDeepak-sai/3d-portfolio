@@ -20,6 +20,7 @@ function morph(from: DOMRect, to: DOMRect) {
 
 export interface Slide {
   src: string
+  alt?: string
   width?: number
   height?: number
   /** A line under the picture. Optional per slide — a set can caption some and not others. */
@@ -144,7 +145,7 @@ export function Carousel({ slides, alt, ratio, className, zoomable = true }: Pro
               {/* eslint-disable-next-line @next/next/no-img-element -- dimensions known */}
               <img
                 src={s.src}
-                alt={`${alt} ${i + 1} of ${count}`}
+                alt={s.alt ?? `${alt} ${i + 1} of ${count}`}
                 width={s.width}
                 height={s.height}
                 /*
@@ -454,7 +455,7 @@ function Lightbox({
             key={`in-${index}`}
             className="lb__img"
             src={s.src}
-            alt={`${alt} ${index + 1} of ${count}`}
+            alt={s.alt ?? `${alt} ${index + 1} of ${count}`}
             width={s.width}
             height={s.height}
             style={{ ['--dx' as string]: `${(leaving?.dir ?? 1) * 34}px` }}
