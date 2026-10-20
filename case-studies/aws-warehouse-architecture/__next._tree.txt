@@ -2,4 +2,4 @@
 :HL["/3d-portfolio/_next/static/css/187cc24fe42bf072.css","style"]
 :HL["/3d-portfolio/_next/static/css/e00ba5333f1d4d7f.css","style"]
 :HL["/3d-portfolio/_next/static/css/6a4c202b70308caf.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"case-studies","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"aws-warehouse-architecture","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"RWKjgedAkHTBX7XPit-vh"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"case-studies","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"aws-warehouse-architecture","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"WUuJINGxD7Y8kpZgwPTDt"}
