@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /stats
+Disallow: /edit
+Disallow: /api/edit
+
+Sitemap: https://cherukurideepak-sai.github.io/3d-portfolio/sitemap.xml

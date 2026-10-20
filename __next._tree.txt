@@ -1,0 +1,13 @@
+:HL["/3d-portfolio/_next/static/media/36966cca54120369-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/3d-portfolio/_next/static/css/4d635806c5acbdff.css","style"]
+:HL["/3d-portfolio/_next/static/css/e00ba5333f1d4d7f.css","style"]
+:HL["/3d-portfolio/_next/static/css/e259b60642d37f17.css","style"]
+:HL["/3d-portfolio/logos/python-original.svg","image"]
+:HL["/3d-portfolio/logos/java-original.svg","image"]
+:HL["/3d-portfolio/logos/javascript-original.svg","image"]
+:HL["/3d-portfolio/logos/html5-original.svg","image"]
+:HL["/3d-portfolio/logos/css3-original.svg","image"]
+:HL["/3d-portfolio/logos/amazonwebservices-original-wordmark.svg","image"]
+:HL["/3d-portfolio/logos/git-original.svg","image"]
+:HL["/3d-portfolio/logos/github-original.svg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4224,"slots":null}}},"staleTime":300,"buildId":"4l-bJToZxpy69rAn05zdd"}
