@@ -8,7 +8,6 @@ import {
   headlineStats,
   jobs,
   profile,
-  projects,
   site,
   toolGroups,
 } from '@/content'
@@ -42,7 +41,7 @@ export function Bar() {
           <a href="#about">{site.nav.about}</a>
           <a href="#skills">{site.nav.skills}</a>
           <a href="#experience">{site.nav.experience}</a>
-          <a href="#work">{site.nav.work}</a>
+          <a href="#case-studies">{site.nav.caseStudies}</a>
           <a href="#contact">{site.nav.contact}</a>
         </nav>
         <ThemeToggle />
@@ -114,9 +113,9 @@ export function Hero() {
         </p>
 
         <div className="hero__actions" data-intro="actions">
-          <a className="cta" href="#work">
+          <a className="cta" href="#case-studies">
             <span className="cta__fill" aria-hidden />
-            <span className="cta__text">{site.seeWork}</span>
+            <span className="cta__text">{site.seeCaseStudies}</span>
             <span className="cta__icon" aria-hidden>
               <Arrow />
             </span>
@@ -286,68 +285,6 @@ export function Experience() {
               highlights={job.highlights}
               stack={job.stack}
             />
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
-export function Work() {
-  const ordered = [...projects].sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
-
-  return (
-    <section className="work" id="work">
-      <div className="wrap">
-        <div className="section__head reveal">
-          <p className="eyebrow">{site.work.eyebrow}</p>
-          <h2>{site.work.title}</h2>
-          <p>{site.work.lede}</p>
-        </div>
-
-        <div className="cases">
-          {ordered.map((p, i) => (
-            <article className="case reveal" key={p.slug}>
-              {/*
-                aria-hidden + tabindex -1: the picture is decorative here because the "Read the
-                write-up" link below goes to the same place. Two tab stops to one destination is
-                noise for a keyboard or screen-reader user.
-              */}
-              <Link
-                className={`case__shot${p.images?.length ? '' : ' case__shot--none'}`}
-                href={`/work/${p.slug}`}
-                data-case-shot
-                tabIndex={-1}
-                aria-hidden
-              >
-                {p.images?.length ? (
-                  /* eslint-disable-next-line @next/next/no-img-element -- static asset, letterboxed into a fixed 16:10 frame */
-                  <img src={publicPath(p.images[0])} alt="" loading="lazy" />
-                ) : (
-                  <span>{p.name}</span>
-                )}
-              </Link>
-
-              <div className="case__body">
-                <p className="case__no">
-                  {String(i + 1).padStart(2, '0')} / {p.year ? `${p.year} · ` : ''}{p.kind}
-                </p>
-                <h3>{p.name}</h3>
-                <p className="case__tag">{p.tagline}</p>
-                <p className="case__lede">{p.lede}</p>
-                {p.award ? <p className="case__award">🏆 {p.award}</p> : null}
-                <div className="s-chips">
-                  {p.stack.slice(0, 4).map((s) => (
-                    <span className="s-chip" key={s}>
-                      {s}
-                    </span>
-                  ))}
-                </div>
-                <Link className="case__go" href={`/work/${p.slug}`}>
-                  {site.work.readMore} <span aria-hidden>→</span>
-                </Link>
-              </div>
-            </article>
           ))}
         </div>
       </div>

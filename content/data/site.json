@@ -5,14 +5,14 @@
     "emphasis": "AI and machine learning",
     "tail": "through practical projects."
   },
-  "seeWork": "Explore selected work",
+  "seeCaseStudies": "Explore case studies",
   "toAbout": "About me",
   "toAboutBadge": "Background & skills",
   "nav": {
     "about": "About",
     "skills": "Skills",
     "experience": "Experience",
-    "work": "Work",
+    "caseStudies": "Case Studies",
     "contact": "Contact",
     "sectionsLabel": "Sections",
     "topLabel": "Top of page",

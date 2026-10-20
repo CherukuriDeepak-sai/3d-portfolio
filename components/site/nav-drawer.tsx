@@ -61,7 +61,7 @@ export function NavDrawer() {
     { href: '#about', label: site.nav.about },
     { href: '#skills', label: site.nav.skills },
     { href: '#experience', label: site.nav.experience },
-    { href: '#work', label: site.nav.work },
+    { href: '#case-studies', label: site.nav.caseStudies },
     { href: '#contact', label: site.nav.contact },
   ]
 

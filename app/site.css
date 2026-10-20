@@ -1809,3 +1809,66 @@ html:has(.site)::-webkit-scrollbar-thumb:hover {
   .site .job__chev { transition: none; }
 }
 
+/* ---------- report-based case studies ---------- */
+.site .study-index { padding-block: clamp(4.5rem, 10vw, 8rem); background: color-mix(in srgb, var(--surface) 72%, var(--canvas-base)); border-block: var(--bw) solid var(--border); }
+.site .study-index__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1rem, 2.5vw, 2rem); }
+.site .study-index__card { min-width: 0; padding: clamp(1.25rem, 3vw, 2rem); border: var(--bw) solid var(--border); background: var(--surface); box-shadow: var(--shadow-hard); transition: transform 180ms var(--ease-out), box-shadow 180ms var(--ease-out); }
+.site .study-index__card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hard-lg); }
+.site .study-index__number, .site .study-index__course { color: var(--ink-subtle); font-size: .82rem; }
+.site .study-index__number { margin-bottom: 1.5rem; font-variant-numeric: tabular-nums; }
+.site .study-index__card h3 { font-size: clamp(1.35rem, 2.5vw, 2rem); margin-bottom: .65rem; }
+.site .study-index__summary { margin-top: 1rem; max-width: 56ch; }
+.site .study-index__card .case__go { margin-top: 1.5rem; }
+.site .cs-page { padding-top: calc(var(--bar-h) + clamp(2rem, 5vw, 4.5rem)); padding-bottom: 4rem; }
+.site .cs-document { width: min(100%, 850px); margin-inline: auto; overflow-wrap: anywhere; }
+.site .cs-document__head { padding-block: 1rem 2.25rem; border-bottom: var(--bw) solid var(--border); }
+.site .cs-document__course { color: var(--ink-subtle); font-size: .85rem; letter-spacing: .04em; }
+.site .cs-document__head h1 { margin-top: .8rem; max-width: 18ch; font-size: clamp(2.2rem, 6vw, 4.5rem); }
+.site .cs-document__summary { margin-top: 1rem; max-width: 68ch; color: var(--ink-muted); }
+.site .cs-toc { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; padding-block: 1.25rem; border-bottom: var(--bw) solid var(--border); }
+.site .cs-toc > span { color: var(--ink-subtle); font-size: .78rem; font-weight: 600; margin-right: .35rem; }
+.site .cs-toc a { padding: .3rem .65rem; border: 1px solid var(--border); border-radius: var(--radius-pill); color: var(--ink); font-size: .82rem; text-decoration: none; }
+.site .cs-toc a:hover { background: var(--accent); color: var(--accent-ink); }
+.site .cs-section { padding-block: clamp(2rem, 5vw, 3.5rem); border-bottom: var(--bw) solid var(--border); scroll-margin-top: calc(var(--bar-h) + 1rem); }
+.site .cs-section h2 { margin-bottom: 1.2rem; font-size: clamp(1.65rem, 3vw, 2.35rem); }
+.site .cs-section h3 { margin: 1.7rem 0 .8rem; font-size: clamp(1.15rem, 2.2vw, 1.45rem); }
+.site .cs-section p + p { margin-top: .9rem; }
+.site .cs-list, .site .cs-steps { padding-left: 1.25rem; margin-block: 1rem; list-style: disc; }
+.site .cs-steps { list-style: decimal; }
+.site .cs-list li, .site .cs-steps li { padding-left: .25rem; margin-block: .5rem; }
+.site .cs-list li::marker, .site .cs-steps li::marker { color: var(--accent); }
+.site .cs-chip-list { display: flex; flex-wrap: wrap; gap: .5rem; margin-block: 1.25rem; }
+.site .cs-chip-list li { padding: .25rem .65rem; border: 1px solid var(--border); border-radius: var(--radius-pill); font-size: .84rem; }
+.site .cs-two-col, .site .cs-models { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1.5rem; margin-block: 1.25rem; }
+.site .cs-model { padding: 1rem; border: 1px solid var(--border); background: var(--surface); }
+.site .cs-model h3 { margin-top: 0; }
+.site .cs-model__size { color: var(--ink-subtle); font-size: .84rem; }
+.site .cs-table-wrap { overflow-x: auto; margin-block: 1.25rem; border: 1px solid var(--border); background: var(--surface); }
+.site .cs-table-wrap:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.site .cs-table { width: 100%; min-width: 38rem; border-collapse: collapse; text-align: left; font-size: .91rem; }
+.site .cs-table caption { padding: .8rem 1rem; border-bottom: 1px solid var(--border); color: var(--ink-muted); font-weight: 600; text-align: left; }
+.site .cs-table th, .site .cs-table td { padding: .75rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+.site .cs-table th { background: color-mix(in srgb, var(--accent) 18%, var(--surface)); font-size: .82rem; }
+.site .cs-table tr:last-child td { border-bottom: 0; }
+.site .cs-note { margin-block: 1.25rem; padding: 1rem 1.2rem; border-left: 4px solid var(--accent); background: color-mix(in srgb, var(--accent) 15%, var(--surface)); }
+.site .cs-note p { margin-top: .35rem; }
+.site .cs-footnote { color: var(--ink-subtle); font-size: .88rem; margin-top: 1rem !important; }
+.site .cs-subsection { margin-top: 2rem; }
+.site .cs-subsection h3 { margin-top: 0; }
+.site .cs-figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1rem; margin-block: 1rem; }
+.site .cs-figure { min-width: 0; padding: .7rem; border: 1px solid var(--border); background: var(--surface); }
+.site .cs-figure a { display: block; }
+.site .cs-figure img { width: 100%; height: auto; object-fit: contain; }
+.site .cs-figure figcaption { margin-top: .65rem; color: var(--ink-muted); font-size: .82rem; line-height: 1.45; }
+.site .cs-references { margin-block: 1.5rem; border-block: var(--bw) solid var(--border); padding-block: 1rem; }
+.site .cs-references summary { cursor: pointer; font-weight: 600; }
+.site .cs-references ol { padding: 1rem 0 0 1.5rem; list-style: decimal; }
+.site .cs-references li { margin-block: .6rem; overflow-wrap: anywhere; }
+.site .cs-page > .doc__foot { margin-top: 2rem; }
+@media (max-width: 700px) {
+  .site .study-index__list, .site .cs-two-col, .site .cs-models { grid-template-columns: 1fr; }
+  .site .study-index__card:hover { transform: none; }
+  .site .cs-table { min-width: 34rem; }
+}
+@media (prefers-reduced-motion: reduce) { .site .study-index__card { transition: none; } }
+

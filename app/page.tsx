@@ -10,8 +10,8 @@ import {
   Foot,
   Hero,
   Skills,
-  Work,
 } from '@/components/site/sections'
+import { CaseStudies as CaseStudiesSection } from '@/components/site/case-studies'
 import { Cursor } from '@/components/desktop/cursor'
 import { VisitPing } from '@/components/desktop/visit-ping'
 import { profile } from '@/content'
@@ -57,7 +57,7 @@ export default function Page() {
         <About />
         <Skills />
         <Experience />
-        <Work />
+        <CaseStudiesSection />
         <Credentials />
         <Closer />
         <Foot />

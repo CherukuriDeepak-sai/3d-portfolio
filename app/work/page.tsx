@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function WorkIndex() {
   const sorted = [...projects].sort((a, b) => (b.year ?? 0) - (a.year ?? 0))
-  const back = { href: '/#work', label: site.nav.work }
+  const back = { href: '/#case-studies', label: site.nav.caseStudies }
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -55,7 +55,7 @@ export default function WorkIndex() {
         <h1>{site.workPage.indexTitle}</h1>
         <p className="doc__lede">{site.workPage.indexLede}</p>
 
-        <div className="doc__list">
+        {sorted.length ? <div className="doc__list">
           {sorted.map((p, i) => (
             <Link className="doc__row" href={`/work/${p.slug}`} key={p.slug}>
               <span className="doc__rowno">
@@ -81,7 +81,9 @@ export default function WorkIndex() {
               </span>
             </Link>
           ))}
-        </div>
+        </div> : (
+          <p className="doc__lede">Project write-ups are now presented as detailed case studies. <Link href="/#case-studies">Browse the case studies →</Link></p>
+        )}
 
         <DocFoot back={{ href: '/', label: site.workPage.home }} />
       </div>
