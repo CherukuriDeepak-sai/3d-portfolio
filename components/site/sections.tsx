@@ -390,6 +390,27 @@ export function Closer() {
   )
 }
 
+export function GitHubContributions() {
+  const github = profile.links.find((link) => link.label === 'GitHub')
+  if (!github) return null
+
+  return (
+    <section className="github-contrib" aria-labelledby="github-contrib-title">
+      <div className="wrap github-contrib__inner">
+        <div>
+          <p className="eyebrow">{site.githubContributions.eyebrow}</p>
+          <h2 id="github-contrib-title">{site.githubContributions.title}</h2>
+          <p>{site.githubContributions.body}</p>
+        </div>
+        <a href={github.href} target="_blank" rel="noopener noreferrer">
+          {site.githubContributions.action}
+          <span aria-hidden>↗</span>
+        </a>
+      </div>
+    </section>
+  )
+}
+
 export function Foot() {
   return (
     <>

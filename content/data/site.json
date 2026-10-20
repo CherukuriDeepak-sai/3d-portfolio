@@ -68,6 +68,12 @@
     "body": "I’m currently studying Computer Science at the University of East London and building my AI/ML experience. Email is the best way to reach me.",
     "plainVersion": "Plain text version"
   },
+  "githubContributions": {
+    "eyebrow": "GitHub activity",
+    "title": "Contributions and code",
+    "body": "Explore my contribution activity and repositories on GitHub.",
+    "action": "View GitHub contributions"
+  },
   "footer": { "note": "Thanks for visiting." },
   "workPage": {
     "allWork": "All projects",

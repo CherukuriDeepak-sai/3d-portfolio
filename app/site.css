@@ -1872,3 +1872,14 @@ html:has(.site)::-webkit-scrollbar-thumb:hover {
 }
 @media (prefers-reduced-motion: reduce) { .site .study-index__card { transition: none; } }
 
+/* ---------- GitHub activity at the end of the portfolio ---------- */
+.site .github-contrib { padding-block: clamp(3rem, 7vw, 5rem); border-top: var(--bw) solid var(--border); }
+.site .github-contrib__inner { display: flex; justify-content: space-between; align-items: end; gap: 2rem; }
+.site .github-contrib h2 { margin-top: .5rem; font-size: clamp(1.6rem, 3vw, 2.25rem); }
+.site .github-contrib p:not(.eyebrow) { margin-top: .65rem; color: var(--ink-muted); }
+.site .github-contrib__inner > a { flex: none; display: inline-flex; align-items: center; gap: .7rem; padding: .75rem 1rem; border: var(--bw) solid var(--border); background: var(--surface); color: var(--ink); font-weight: 600; text-decoration: none; box-shadow: var(--shadow-hard); transition: transform 180ms var(--ease-out), box-shadow 180ms var(--ease-out); }
+.site .github-contrib__inner > a:hover { transform: translateY(-2px); box-shadow: var(--shadow-hard-lg); }
+.site .github-contrib__inner > a span { font-size: 1.1em; }
+@media (max-width: 700px) { .site .github-contrib__inner { align-items: start; flex-direction: column; } }
+@media (prefers-reduced-motion: reduce) { .site .github-contrib__inner > a { transition: none; } }
+

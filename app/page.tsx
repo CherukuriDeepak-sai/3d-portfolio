@@ -8,6 +8,7 @@ import {
   Credentials,
   Experience,
   Foot,
+  GitHubContributions,
   Hero,
   Skills,
 } from '@/components/site/sections'
@@ -60,6 +61,7 @@ export default function Page() {
         <CaseStudiesSection />
         <Credentials />
         <Closer />
+        <GitHubContributions />
         <Foot />
       </SiteMotion>
     </main>
