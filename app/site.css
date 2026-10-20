@@ -882,12 +882,13 @@
 }
 
 /* ---------- credentials ---------- */
-.site .creds { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 1.25rem; align-items: stretch; }
+.site .creds { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; align-items: stretch; }
 .site .cred {
   border: var(--bw) solid var(--border);
   border-radius: var(--radius-card);
   background: var(--surface);
   padding: clamp(1.25rem, 3vw, 1.75rem);
+  min-height: 27rem;
   box-shadow: var(--shadow-hard);
 }
 .site .cred h3 {
@@ -968,7 +969,10 @@
   opacity: 1;
   visibility: visible;
 }
-@media (max-width: 900px) { .site .creds { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .site .creds { grid-template-columns: 1fr; }
+  .site .cred { min-height: 0; }
+}
 
 /* ---------- closer ---------- */
 .site .closer {
