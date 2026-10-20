@@ -19,7 +19,7 @@ import { publicPath } from '@/lib/public-path'
  * first image instead meant a set mixing a full-page capture with a viewport one produced a frame
  * that fitted one and stranded the other, and made the carousel a different height per project.
  */
-export function Shots({ images, alt }: { images: readonly string[]; alt: string }) {
+export function Shots({ images, alt, descriptions }: { images: readonly string[]; alt: string; descriptions?: readonly string[] }) {
   const track = useRef<HTMLDivElement>(null)
   const [index, setIndex] = useState(0)
   const many = images.length > 1
@@ -49,7 +49,7 @@ export function Shots({ images, alt }: { images: readonly string[]; alt: string 
             {/* eslint-disable-next-line @next/next/no-img-element -- static asset, fitted into a fixed frame */}
             <img
               src={publicPath(src)}
-              alt={many ? `${alt} — ${i + 1} of ${images.length}` : alt}
+              alt={descriptions?.[i] ?? (many ? `${alt} — ${i + 1} of ${images.length}` : alt)}
               loading={i === 0 ? 'eager' : 'lazy'}
               decoding="async"
             />

@@ -137,6 +137,7 @@ const projects: Field = {
       highlights,
       stack,
       images: images('work'),
+      imageAlts: { kind: 'list', label: 'Image descriptions', optional: true, help: 'Describe each project image in the same order as Screenshots.', of: { kind: 'str', label: 'Description' } },
       links: links('Demo, repo, release — chips at the foot of the card.', true),
     },
   },

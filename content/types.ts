@@ -73,6 +73,8 @@ export interface Project {
    * shape, and the rest are letterboxed into it rather than cropped. Omit for a placeholder.
    */
   images?: string[]
+  /** Descriptive text for each screenshot or project figure, in matching order. */
+  imageAlts?: string[]
   /** Small grey line at the top of the detail card. */
   meta?: string
   /** Demo, repo, release. Rendered as link chips at the foot of the detail card. */

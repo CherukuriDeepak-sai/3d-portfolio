@@ -19,6 +19,10 @@
       { "name": "Scikit-learn" },
       { "name": "Predictive modelling" },
       { "name": "Machine vision" },
+      { "name": "Deep learning" },
+      { "name": "TensorFlow" },
+      { "name": "Transfer learning" },
+      { "name": "Data augmentation" },
       { "name": "Data analysis" }
     ]
   },

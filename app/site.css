@@ -888,7 +888,6 @@
   border-radius: var(--radius-card);
   background: var(--surface);
   padding: clamp(1.25rem, 3vw, 1.75rem);
-  min-height: 27rem;
   box-shadow: var(--shadow-hard);
 }
 .site .cred h3 {

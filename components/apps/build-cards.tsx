@@ -395,7 +395,7 @@ export function buildCards(): CardDef[] {
           {p.meta ? <p className="detail-meta">{p.meta}</p> : null}
           {p.award ? <div className="award">🏆 {p.award}</div> : null}
           <p className="lede">{p.lede}</p>
-          <Shots images={p.images} alt={`${p.name} screenshot`} />
+          <Shots images={p.images} alt={`${p.name} screenshot`} descriptions={p.imageAlts} />
           <ul className="bullets">
             {p.highlights.map((h, i) => (
               <li key={i}>{rich(h)}</li>
@@ -430,7 +430,7 @@ export function buildCards(): CardDef[] {
         tint: detailPalette.project.tint,
         width: 520,
         rotate: -0.9,
-        body: <Shots images={p.images} alt={`${p.name} screenshot`} full />,
+        body: <Shots images={p.images} alt={`${p.name} screenshot`} descriptions={p.imageAlts} full />,
       })
     }
   }
