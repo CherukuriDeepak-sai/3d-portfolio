@@ -1,5 +1,0 @@
-:HL["/3d-portfolio/_next/static/media/36966cca54120369-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/3d-portfolio/_next/static/css/4d635806c5acbdff.css","style"]
-:HL["/3d-portfolio/_next/static/css/e00ba5333f1d4d7f.css","style"]
-:HL["/3d-portfolio/_next/static/css/d0ec4464438eeb5d.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4112,"slots":{"children":{"name":"work","param":null,"prefetchHints":4160,"slots":{"children":{"name":"slug","param":{"type":"d","key":"natural-image-machine-vision","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"dQGweZpj6jsqqFX940xK0"}
