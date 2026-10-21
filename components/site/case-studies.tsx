@@ -8,8 +8,8 @@ export function CaseStudies() {
       <div className="wrap">
         <div className="section__head reveal">
           <p className="eyebrow">Case Studies</p>
-          <h2>How the work was planned, built and evaluated</h2>
-          <p>Detailed coursework projects, including their methods, evidence, results, costs and limitations.</p>
+          <h2>Plan, build and evaluate practical projects</h2>
+          <p>Review each project’s methods, evidence, results, costs and limitations.</p>
         </div>
 
         <div className="study-index__list">
@@ -20,7 +20,7 @@ export function CaseStudies() {
               <p className="study-index__course">{study.course}</p>
               <p className="study-index__summary">{study.summary}</p>
               <Link className="case__go" href={`/case-studies/${study.slug}`}>
-                Read the full case study <span aria-hidden>→</span>
+                Explore the full case study <span aria-hidden>→</span>
               </Link>
             </article>
           ))}

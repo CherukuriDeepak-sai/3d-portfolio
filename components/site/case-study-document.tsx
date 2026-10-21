@@ -64,7 +64,7 @@ function FigureGroup({ title, figures }: { title: string; figures: readonly Case
 function References({ items }: { items: readonly string[] }) {
   return (
     <details className="cs-references">
-      <summary>References listed in the report ({items.length})</summary>
+      <summary>Read the report references ({items.length})</summary>
       <ol>{items.map((item) => <li key={item}>{item}</li>)}</ol>
     </details>
   )
@@ -76,7 +76,7 @@ function VisionDocument({ study }: { study: VisionCaseStudy }) {
   return (
     <>
       <section id="vision-overview" className="cs-section">
-        <h2>Project overview</h2>
+        <h2>Frame the project</h2>
         <p>{study.context}</p>
         <p><strong>My role:</strong> {study.role}</p>
         <ul className="cs-chip-list" aria-label="Tools and methods">
@@ -85,8 +85,8 @@ function VisionDocument({ study }: { study: VisionCaseStudy }) {
       </section>
 
       <section id="vision-data" className="cs-section">
-        <h2>Dataset and preparation</h2>
-        <p>The Natural Images dataset contains eight classes:</p>
+        <h2>Prepare the dataset</h2>
+        <p>Classify Natural Images across eight categories:</p>
         <ul className="cs-chip-list" aria-label="Image classes">
           {study.classes.map((item) => <li key={item}>{item}</li>)}
         </ul>
@@ -98,21 +98,21 @@ function VisionDocument({ study }: { study: VisionCaseStudy }) {
         />
         <div className="cs-two-col">
           <div>
-            <h3>Preprocessing</h3>
+            <h3>Preprocess each image</h3>
             <ul className="cs-list">{study.preprocessing.map((item) => <li key={item}>{item}</li>)}</ul>
           </div>
           <div>
-            <h3>Augmentation</h3>
+            <h3>Augment the dataset</h3>
             <ul className="cs-list">{study.augmentation.map((item) => <li key={item}>{item}</li>)}</ul>
           </div>
         </div>
-        <h3>Input pipeline</h3>
+        <h3>Build the input pipeline</h3>
         <ul className="cs-list">{study.inputPipeline.map((item) => <li key={item}>{item}</li>)}</ul>
-        <FigureGroup title="Dataset figures" figures={figuresByGroup('Dataset')} />
+        <FigureGroup title="Inspect dataset figures" figures={figuresByGroup('Dataset')} />
       </section>
 
       <section id="vision-models" className="cs-section">
-        <h2>Model design</h2>
+        <h2>Build and compare models</h2>
         <div className="cs-models">
           {study.models.map((model) => (
             <article className="cs-model" key={model.name}>
@@ -124,40 +124,40 @@ function VisionDocument({ study }: { study: VisionCaseStudy }) {
             </article>
           ))}
         </div>
-        <FigureGroup title="Architecture diagrams" figures={figuresByGroup('Model architectures')} />
+        <FigureGroup title="Review model architectures" figures={figuresByGroup('Model architectures')} />
       </section>
 
       <section id="vision-training" className="cs-section">
-        <h2>Training and evaluation</h2>
+        <h2>Train and evaluate the models</h2>
         <ul className="cs-list">{study.trainingNotes.map((item) => <li key={item}>{item}</li>)}</ul>
         <DataTable
           caption="Reported test-set model comparison"
           headers={['Model', 'Test accuracy', 'Additional result']}
           rows={study.models.map((model) => [model.name, model.accuracy, model.loss ?? 'No test-loss value stated in the report summary'])}
         />
-        <h3>Confusion-matrix findings</h3>
+        <h3>Read the confusion matrices</h3>
         <ul className="cs-list">{study.matrixFindings.map((item) => <li key={item}>{item}</li>)}</ul>
-        <h3>Classification metrics</h3>
+        <h3>Measure class performance</h3>
         <ul className="cs-list">{study.classificationNotes.map((item) => <li key={item}>{item}</li>)}</ul>
-        <h3>ROC analysis</h3>
+        <h3>Compare ROC curves</h3>
         <ul className="cs-list">{study.rocNotes.map((item) => <li key={item}>{item}</li>)}</ul>
-        <FigureGroup title="Training curves" figures={figuresByGroup('Training')} />
-        <FigureGroup title="Test results, confusion matrices and evaluation plots" figures={figuresByGroup('Results and evaluation')} />
+        <FigureGroup title="Track model training" figures={figuresByGroup('Training')} />
+        <FigureGroup title="Review test results and evaluation plots" figures={figuresByGroup('Results and evaluation')} />
       </section>
 
       <section id="vision-reflection" className="cs-section">
-        <h2>Critical analysis</h2>
+        <h2>Assess the results</h2>
         <div className="cs-two-col">
           <div>
-            <h3>Strengths</h3>
+            <h3>Build on these strengths</h3>
             <ul className="cs-list">{study.strengths.map((item) => <li key={item}>{item}</li>)}</ul>
           </div>
           <div>
-            <h3>Limitations</h3>
+            <h3>Address these limitations</h3>
             <ul className="cs-list">{study.limitations.map((item) => <li key={item}>{item}</li>)}</ul>
           </div>
         </div>
-        <h3>Future work</h3>
+        <h3>Plan the next steps</h3>
         <ul className="cs-list">{study.futureWork.map((item) => <li key={item}>{item}</li>)}</ul>
       </section>
       <References items={study.references} />
@@ -171,7 +171,7 @@ function CloudDocument({ study }: { study: CloudCaseStudy }) {
   return (
     <>
       <section id="cloud-overview" className="cs-section">
-        <h2>Project overview</h2>
+        <h2>Frame the project</h2>
         <p>{study.summary}</p>
         <p><strong>My role:</strong> {study.role}</p>
         <ul className="cs-chip-list" aria-label="AWS services and tools">
@@ -184,8 +184,8 @@ function CloudDocument({ study }: { study: CloudCaseStudy }) {
       </section>
 
       <section id="cloud-plan" className="cs-section">
-        <h2>Project plan</h2>
-        <p>The written schedule allocates {planDays} planned working days across discovery, design, AWS setup, monitoring and estimation.</p>
+        <h2>Plan the project</h2>
+        <p>Allocate {planDays} planned working days across discovery, design, AWS setup, monitoring and estimation.</p>
         <DataTable
           caption="Planned phases and duration from the report text"
           headers={['Phase', 'Planned duration']}
@@ -195,7 +195,7 @@ function CloudDocument({ study }: { study: CloudCaseStudy }) {
       </section>
 
       <section id="cloud-requirements" className="cs-section">
-        <h2>Requirements</h2>
+        <h2>Define requirements</h2>
         <DataTable
           caption="Functional and non-functional requirements mapped to AWS"
           headers={['ID', 'Type', 'Requirement', 'AWS mapping']}
@@ -204,21 +204,21 @@ function CloudDocument({ study }: { study: CloudCaseStudy }) {
       </section>
 
       <section id="cloud-design" className="cs-section">
-        <h2>Region and system design</h2>
+        <h2>Choose a region and design the system</h2>
         <ul className="cs-list">{study.regionNotes.map((item) => <li key={item}>{item}</li>)}</ul>
         <DataTable
           caption="Layers in the proposed cloud architecture"
           headers={['Layer', 'Services', 'Responsibility']}
           rows={study.architectureLayers.map((item) => [item.layer, item.services, item.responsibility])}
         />
-        <h3>Request and data flow</h3>
+        <h3>Trace requests and data</h3>
         <ol className="cs-steps">{study.architectureFlow.map((item) => <li key={item}>{item}</li>)}</ol>
         <FigureGrid figures={study.figures.filter((figure) => figure.group === 'Architecture')} />
         <p className="cs-footnote">{study.reportNotes[1]}</p>
       </section>
 
       <section id="cloud-implementation" className="cs-section">
-        <h2>Service setup and implementation notes</h2>
+        <h2>Configure services and record implementation</h2>
         <DataTable
           caption="AWS services covered by the design and the evidence described in the report"
           headers={['Service', 'Purpose in the design', 'What the report records']}
@@ -227,7 +227,7 @@ function CloudDocument({ study }: { study: CloudCaseStudy }) {
       </section>
 
       <section id="cloud-costing" className="cs-section">
-        <h2>Cost estimate</h2>
+        <h2>Estimate costs</h2>
         <DataTable
           caption="Estimated AWS costs as shown in the coursework"
           headers={['Estimate period', 'Reported amount']}
@@ -238,7 +238,7 @@ function CloudDocument({ study }: { study: CloudCaseStudy }) {
       </section>
 
       <section id="cloud-reflection" className="cs-section">
-        <h2>Analysis and reflection</h2>
+        <h2>Analyze and reflect</h2>
         <ul className="cs-list">{study.reflection.map((item) => <li key={item}>{item}</li>)}</ul>
       </section>
       <References items={study.references} />

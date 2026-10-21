@@ -1,9 +1,9 @@
 {
   "openTo": "Open to AI/ML Engineer and Data Analyst opportunities in the UK",
   "headline": {
-    "lead": "Computer Science student exploring",
-    "emphasis": "AI and machine learning",
-    "tail": "through practical projects."
+    "lead": "I build practical projects",
+    "emphasis": "in AI and cloud computing",
+    "tail": "while pursuing my MSc in Computer Science."
   },
   "seeCaseStudies": "Explore case studies",
   "toAbout": "About me",
@@ -24,7 +24,7 @@
   "theme": { "toDark": "Switch to dark", "toLight": "Switch to light" },
   "about": {
     "eyebrow": "About",
-    "title": "A little about me",
+    "title": "Build practical skills in AI and cloud computing",
     "portraitPending": "Portrait coming soon",
     "portraitAlt": "Portrait of Deepak Sai Cherukuri"
   },
@@ -40,10 +40,10 @@
     "hiddenAlt": "Deepak Sai Cherukuri",
     "flipBack": "Flip back"
   },
-  "skills": { "eyebrow": "Skills", "title": "Tools and strengths" },
+  "skills": { "eyebrow": "Skills", "title": "Build with these tools and strengths" },
   "experience": {
     "eyebrow": "Experience",
-    "title": "Work and education",
+    "title": "Study computer science and build professional experience",
     "indexLabel": "Roles",
     "expand": "Show details",
     "collapse": "Hide details"
@@ -57,7 +57,7 @@
   },
   "credentials": {
     "eyebrow": "Education and certifications",
-    "title": "Learning and credentials",
+    "title": "Develop skills and earn credentials",
     "education": "Education",
     "certifications": "Certifications",
     "awards": "Awards"
@@ -65,21 +65,21 @@
   "closer": {
     "eyebrow": "Contact",
     "title": "Get in touch",
-    "body": "I’m currently studying Computer Science at the University of East London and building my AI/ML experience. Email is the best way to reach me.",
+    "body": "I’m pursuing an MSc in Computer Science at the University of East London and building practical AI/ML experience. Email me to discuss opportunities or my projects.",
     "plainVersion": "Plain text version"
   },
   "githubContributions": {
     "eyebrow": "GitHub activity",
-    "title": "Contributions and code",
-    "body": "Explore my contribution activity and repositories on GitHub.",
+    "title": "Explore my code and contributions",
+    "body": "Review my GitHub activity and browse my repositories.",
     "action": "View GitHub contributions"
   },
-  "footer": { "note": "Thanks for visiting." },
+  "footer": { "note": "Keep in touch." },
   "workPage": {
     "allWork": "All projects",
     "home": "Home",
     "indexTitle": "Selected work",
-    "indexLede": "Projects in machine vision and cloud computing.",
+    "indexLede": "Browse case studies in machine vision and cloud computing.",
     "whatItDoes": "Project details",
     "builtWith": "Tools and methods",
     "shots": "Project images",
